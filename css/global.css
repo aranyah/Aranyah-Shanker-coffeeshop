@@ -1,0 +1,109 @@
+/* ---------------- tags below ---------------- */
+
+body {
+    font-family: 'Open Sans';
+    font-weight: 400;
+    margin: 0;
+    }
+
+h1, h2 {
+    font-size: 3.75rem;
+    font-weight: 300;
+  }
+
+h3 {
+    font-size: 2.0625rem;
+    font-weight: 300;
+  }
+
+p {
+    font-size: 1.125rem;
+    font-weight: 400; 
+}
+
+a {
+    text-decoration: none;
+  }
+
+li {
+    margin: 1rem;
+    list-style-type: none;
+    display: inline-block;
+}
+
+
+/* ---------------- classes below ---------------- */
+
+
+
+.navbar-items, .navbar-logo {
+    display: inline-block;
+    align-items: center;
+    padding: 1.875rem 0rem 0rem 0rem;
+    background-color: #FFF0ED;
+    color: #393939;   
+}
+
+.navbar {
+    /* text-align: center;  */
+    padding: 0.9375rem 1.875rem;
+    background-color: #FFF0ED;
+
+}
+
+.navbar-logo a{
+    display: inline-block; 
+    vertical-align: middle;
+
+}
+
+.navbar-logo{
+    margin:0;
+    padding: 0;
+}
+
+.navbar-logo-image {
+    width: 50px; 
+    height: auto; 
+    display: inline-block;
+    /* vertical-align: top;  */
+    margin:0;
+    padding: 0;
+
+}
+
+.navbar-list {
+    text-decoration: none;
+    display: inline-block;
+    vertical-align: bottom;
+    gap: 0.9375rem;
+    margin:0;
+    padding-bottom: 0;
+
+}
+
+.navbar-logo-text{
+    text-decoration: none;
+    font-size: 2.5rem;
+    color: #393939;
+}
+
+    
+button {
+    background-color: #5BACC3; 
+    color: white; 
+    border: none; 
+    padding: 10px 24px; 
+    margin: 20px auto;
+    font-size: 1.3125rem;
+    font-weight: 400;
+}
+
+.blue-text{
+    text-decoration: none;
+    color: #5BACC3;
+} 
+
+
+
+

@@ -1,0 +1,122 @@
+
+
+.main-heading {
+    font-size: 3.75rem;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.landingpage-top {
+    background-color: #FFF0ED;
+    overflow: hidden;
+    padding: 1.25rem;
+}
+
+
+.coffee-bag{
+    float: right;
+    margin-left: auto;
+    width: 30%; 
+    margin: 4.375rem;
+    max-width:15vw;
+    max-height:35vh;
+    padding: 7rem 7rem 7rem 0rem;
+}
+
+.introductory-info {
+    padding: 14rem 0rem 0rem 7rem;
+    width:25%;
+    display: inline-block;
+    vertical-align: top;
+    margin: 1.875rem;
+    
+
+}
+
+.our-products {
+    background-color: #F7F7F7;
+    overflow: hidden;
+    
+}
+
+.discounts {
+    text-align: center;
+   
+}
+
+.discounts-text {
+    display: inline-block;
+    background-color: #393939;
+    color: #ffffff;
+    padding: 2.5rem; 
+    font-size: 1.125rem; 
+    text-align: center; 
+    border: 4rem solid white;
+    margin: 1.25rem auto;
+    font-size: 2.8125rem;
+    font-weight: 400;
+}
+
+.discounts span {
+    font-weight: 700;
+}
+
+.footer {
+    background-color: #FFF0ED;
+}
+
+.card {
+    box-shadow: 0 5px 9px -1 rgba(0, 0, 0, 0.2);
+        margin: 1.25rem;
+    border-radius: 0.625rem;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 2rem;
+    display: inline-block;
+    width: 20.625rem;
+    height: 27.5rem;
+    max-width: 18.75rem;
+    }
+
+.our-products {
+    display: block;
+    text-align: center;
+
+}
+
+
+.our-products img {
+    height: 17.5rem;
+}
+
+
+
+.view-all-button {
+    display: block;
+}
+
+.footer-companyinfocard {
+
+    display: block;
+    text-align: left;
+    padding: 1.25rem;
+    margin: 0 0 0 7rem;
+}
+
+.footer-companyinfocard div {
+    display: inline-block; 
+    vertical-align: top;
+    margin-right: 1.25rem; 
+    width: 30%; 
+    min-width: 12.5rem; 
+}
+
+.footer img {
+    margin-right: 0.5rem; 
+}  
+
+.footer-companyinfocard span {
+    font-weight: bold;
+}
+

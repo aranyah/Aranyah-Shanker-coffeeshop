@@ -199,10 +199,7 @@
 
 .competition-images:hover .competition-second-image {
     transform-origin: center;
-    /* top:50%;
-    left:50%; */
-    /* top:25%;
-    left:25%; */
+
     animation: rotate-image 2s linear infinite;
 }
 

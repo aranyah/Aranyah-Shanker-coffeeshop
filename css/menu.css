@@ -3,7 +3,7 @@
 .menu-titlecard {
     width: 100%;
     height: 700px;
-    background-image: url('../assets/coffee-circle.jpg'); 
+    background-image: url('../assets/images/coffee-circle.jpg'); 
     background-size: cover;
     background-position: center;
     display: flex;
@@ -24,11 +24,20 @@
     text-align: center;
     margin:0;    
     position: relative;
-    border: 5px solid #5BACC3;
+
     transform: translate(5px, 5px);
 }
 
+.menu-textbox::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border: 5px solid #5BACC3;
+    bottom: 5px;
+    right: 5px;
 
+}
 
 .menu-navbar {
     background-color: #393939; 

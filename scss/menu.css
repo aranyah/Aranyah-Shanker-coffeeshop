@@ -1,0 +1,212 @@
+/* ---------------- variables below ---------------- */
+/* ---------------- tags below ---------------- */
+body {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0;
+}
+
+h1, h2 {
+  font-size: 3.75rem;
+  font-weight: 300;
+}
+
+h3 {
+  font-size: 2.0625rem;
+  font-weight: 300;
+}
+
+p {
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  margin: 1rem;
+  list-style-type: none;
+  display: inline-block;
+}
+
+/* ---------------- classes below ---------------- */
+.navbar-items, .navbar-logo {
+  display: inline-block;
+  align-items: center;
+  padding: 1.875rem 0rem 0rem 0rem;
+  background-color: #FFF0ED;
+  color: #393939;
+}
+
+.navbar {
+  /* text-align: center;  */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 7em;
+  background-color: #FFF0ED;
+}
+
+.navbar-logo a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-logo {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-logo-image {
+  width: 50px;
+  height: auto;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar-list {
+  text-decoration: none;
+  display: inline-block;
+  vertical-align: bottom;
+  gap: 0.9375rem;
+  margin: 0;
+  padding-bottom: 0;
+  margin-left: auto;
+}
+
+.navbar-logo-text {
+  text-decoration: none;
+  font-size: 2.5rem;
+  color: #393939;
+}
+
+.button-offset {
+  width: 180px;
+  height: 44px;
+  margin: 20px;
+  /* padding: 10px 20px; */
+  background-color: #5BACC3;
+  color: white;
+  font-size: 1.3125rem;
+  font-weight: 400;
+  position: relative;
+  border: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.button-offset::before {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -8px;
+  width: 100%;
+  height: 100%;
+  border: 2px solid #393939;
+  transition: all 0.2s ease;
+}
+
+.button-offset:hover::before {
+  top: 0;
+  left: 0;
+}
+
+.blue-text {
+  text-decoration: none;
+  color: #5BACC3;
+}
+
+.menu-titlecard {
+  width: 100%;
+  height: 700px;
+  background-image: url("../assets/images/coffee-circle.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu-textbox {
+  width: 300px;
+  height: 200px;
+  background-color: #393939;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  position: relative;
+  transform: translate(5px, 5px);
+}
+
+.menu-textbox::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: 5px solid #5BACC3;
+  bottom: 5px;
+  right: 5px;
+}
+
+.menu-navbar {
+  background-color: #393939;
+  text-align: center;
+}
+
+.menu-item-navbar-list {
+  display: inline-block;
+  font: white;
+  margin: 0;
+}
+
+.menu-item-navbar {
+  color: white;
+  padding: 0.625rem;
+  display: inline-block;
+  font: white;
+  margin: 0.625rem;
+  border-left: 0.1875rem solid #00bcd4;
+}
+
+.menu-categories-breakdown {
+  width: 33%;
+}
+
+.hot-drinks, .pastries {
+  background-color: #FFF0ED;
+  overflow: hidden;
+}
+
+.menu-item-descriptions {
+  width: 33%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.pastries {
+  background-color: #FFF0ED;
+}
+
+p.italic-text {
+  font-style: italic;
+}
+
+.cold-drinks {
+  overflow: hidden;
+}
+
+/* .main-heading {
+    font-size: 24px;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+} *//*# sourceMappingURL=menu.css.map */

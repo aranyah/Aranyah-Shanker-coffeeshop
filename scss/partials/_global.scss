@@ -1,5 +1,7 @@
-/* ---------------- variables below ---------------- */
-/* ---------------- tags below ---------------- */
+@use 'variables' as *;
+@use 'mixins' as *;
+
+
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -7,17 +9,17 @@ body {
 }
 
 h1, h2 {
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 2.0625rem;
+  font-size: 33px;
   font-weight: 300;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -26,104 +28,103 @@ a {
 }
 
 li {
-  margin: 1rem;
+  margin: 16px;
   list-style-type: none;
   display: inline-block;
 }
 
-/* ---------------- classes below ---------------- */
-.navbar-items, .navbar-logo {
-  display: inline-block;
-  align-items: center;
-  padding: 1.875rem 0rem 0rem 0rem;
-  background-color: #FFF0ED;
-  color: #393939;
-}
 
 .navbar {
-  /* text-align: center;  */
-  display:flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 7em;
-  background-color: #FFF0ED;
-}
+  @include flex-between;
+  padding: 16px 7em;
+  background-color: $color-lightaccent;
 
-.navbar-logo a {
-  display: inline-block;
-  vertical-align: middle;
-}
+  &-items, &-logo {
+    display: inline-block;
+    align-items: center;
+    padding: 30px 0 0;
+    background-color: $color-lightaccent;
+    color: $color-darkaccent;
+  }
 
-.navbar-logo {
+
+&-logo {
   margin: 0;
   padding: 0;
+
+          a {
+          display: inline-block;
+          vertical-align: middle;
+            }
+
+          &-image {
+            width: 3.125rem;
+            height: auto;
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+          }
+
+          &-text {
+            text-decoration: none;
+            font-size: 40px;
+            color: #393939;
+          }
+
+
 }
 
-.navbar-logo-image {
-  width: 50px;
-  height: auto;
-  display: inline-block;
-  margin: 0;
-  padding: 0;
-}
-
-.navbar-list {
+&-list {
   text-decoration: none;
   display: inline-block;
   vertical-align: bottom;
-  gap: 0.9375rem;
+  gap: 15px;
   margin: 0;
   padding-bottom: 0;
   margin-left: auto;
 }
-
-.navbar-logo-text {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #393939;
 }
-
-
-
 
 
 .button-offset {
-  width: 180px;
-  height: 44px;
-  margin: 20px;
-  /* padding: 10px 20px; */
-  background-color: #5BACC3;
-  color: white;
-  font-size: 1.3125rem;
-  font-weight: 400;
-  position: relative;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  cursor: pointer;
+    @include button-base;
+    
+    width: 180px;
+    height: 44px;
+    margin: 20px;
 
-}
+    background-color: $color-calltoaction;
+    color: $color-white;
 
-.button-offset::before {
+    font-size: 21px;
+    font-weight: 400;
+    text-align: center;
+
+
+
+
+&::before {
   content: '';
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: -0.5rem;
+  left: -0.5rem;
   width: 100%;
   height: 100%;
-  border: 2px solid #393939;
+  border: 0.125rem solid $color-darkaccent;
   transition: all 0.2s ease;
 }
 
-.button-offset:hover::before {
+&:hover::before {
   top: 0;
   left: 0;
 }
-
+}
 
 .blue-text {
   text-decoration: none;
-  color: #5BACC3;
+  color: $color-calltoaction;
+}
+
+.italic-text {
+  font-style: italic;
 }

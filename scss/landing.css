@@ -1,5 +1,3 @@
-/* ---------------- variables below ---------------- */
-/* ---------------- tags below ---------------- */
 body {
   font-family: "Open Sans";
   font-weight: 400;
@@ -7,17 +5,17 @@ body {
 }
 
 h1, h2 {
-  font-size: 3.75rem;
+  font-size: 60px;
   font-weight: 300;
 }
 
 h3 {
-  font-size: 2.0625rem;
+  font-size: 33px;
   font-weight: 300;
 }
 
 p {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 400;
 }
 
@@ -26,92 +24,81 @@ a {
 }
 
 li {
-  margin: 1rem;
+  margin: 16px;
   list-style-type: none;
   display: inline-block;
 }
 
-/* ---------------- classes below ---------------- */
-.navbar-items, .navbar-logo {
-  display: inline-block;
-  align-items: center;
-  padding: 1.875rem 0rem 0rem 0rem;
-  background-color: #FFF0ED;
-  color: #393939;
-}
-
 .navbar {
-  /* text-align: center;  */
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 7em;
+  padding: 16px 7em;
   background-color: #FFF0ED;
 }
-
-.navbar-logo a {
+.navbar-items, .navbar-logo {
   display: inline-block;
-  vertical-align: middle;
+  align-items: center;
+  padding: 30px 0 0;
+  background-color: #FFF0ED;
+  color: #393939;
 }
-
 .navbar-logo {
   margin: 0;
   padding: 0;
 }
-
+.navbar-logo a {
+  display: inline-block;
+  vertical-align: middle;
+}
 .navbar-logo-image {
-  width: 50px;
+  width: 3.125rem;
   height: auto;
   display: inline-block;
   margin: 0;
   padding: 0;
 }
-
+.navbar-logo-text {
+  text-decoration: none;
+  font-size: 40px;
+  color: #393939;
+}
 .navbar-list {
   text-decoration: none;
   display: inline-block;
   vertical-align: bottom;
-  gap: 0.9375rem;
+  gap: 15px;
   margin: 0;
   padding-bottom: 0;
   margin-left: auto;
 }
 
-.navbar-logo-text {
-  text-decoration: none;
-  font-size: 2.5rem;
-  color: #393939;
-}
-
 .button-offset {
+  position: relative;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 180px;
   height: 44px;
   margin: 20px;
-  /* padding: 10px 20px; */
   background-color: #5BACC3;
-  color: white;
-  font-size: 1.3125rem;
+  color: #ffffff;
+  font-size: 21px;
   font-weight: 400;
-  position: relative;
-  border: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   text-align: center;
-  cursor: pointer;
 }
-
 .button-offset::before {
   content: "";
   position: absolute;
-  top: -8px;
-  left: -8px;
+  top: -0.5rem;
+  left: -0.5rem;
   width: 100%;
   height: 100%;
-  border: 2px solid #393939;
+  border: 0.125rem solid #393939;
   transition: all 0.2s ease;
 }
-
 .button-offset:hover::before {
   top: 0;
   left: 0;
@@ -122,8 +109,25 @@ li {
   color: #5BACC3;
 }
 
+.italic-text {
+  font-style: italic;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+}
+
+.card {
+  transition: all 0.2s ease;
+}
+.card:hover {
+  transform: translateY(-0.125rem);
+}
+
 .main-heading {
-  font-size: 3.75rem;
+  font-size: 60px;
   margin: 0;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
@@ -133,39 +137,32 @@ li {
   display: flex;
   background-color: #FFF0ED;
   overflow: hidden;
-  margin: 20px #FFF0ED;
+  margin: 1.25rem #FFF0ED;
 }
-
-.hero-coffee-bag {
-  float: right;
-  margin-left: 650px;
-  width: 30%;
-  /* margin: 4.375rem; */
-  max-width: 15vw;
-  max-height: none;
-  padding: 7rem 7rem 7rem 0rem;
-  margin: 20px #FFF0ED;
-}
-
 .hero-info {
-  /* padding: 14rem 0rem 0rem 7rem; */
   display: inline-block;
   vertical-align: center;
   width: 25%;
-  padding: 14rem 0rem 0rem 7rem;
+  padding: 224px 0px 0px 112px;
   margin: 0%;
+}
+.hero-coffee-bag {
+  float: right;
+  margin-left: 40.625rem;
+  width: 30%;
+  max-width: 15vw;
+  max-height: none;
+  padding: 112px 112px 112px 0px;
 }
 
 .our-products {
   background-color: #F7F7F7;
   overflow: hidden;
-  display: block;
   text-align: center;
-  margin: 20px #F7F7F7;
+  margin: 1.25rem #F7F7F7;
 }
-
 .our-products img {
-  height: 17.5rem;
+  height: 280px;
 }
 
 .card-blue-text {
@@ -175,51 +172,45 @@ li {
   display: flex;
 }
 
+.card {
+  width: 330px;
+  height: 440px;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
 .card-layout {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  gap: 20px;
-  padding: 20px;
+  gap: 1.25rem;
+  padding: 1.25rem;
 }
-
-.card {
-  width: 20.625rem;
-  height: 27.5rem;
-  border-radius: 0.625rem;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  align-items: left;
-  justify-content: flex-start;
-  background-color: #ffffff;
-  position: relative;
-}
-
 .card-image {
-  margin: 20px;
+  margin: 1.25rem;
 }
-
 .card-item-description {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 0;
+  padding: 0.625rem 0;
   box-sizing: border-box;
   text-align: left;
   background-color: #FFF0ED;
 }
-
 .card-item-description h3 {
   margin: 0;
-  padding: 15px 15px 0px 15px;
+  padding: 0.9375rem 0.9375rem 0rem 0.9375rem;
 }
-
 .card-item-description p {
   margin: 0;
-  padding: 0px 15px 15px 15px;
+  padding: 0rem 0.9375rem 0.9375rem 0.9375rem;
   color: #393939;
+}
+
+.center-align {
+  text-align: right;
 }
 
 .card-item-description, .blue-text {
@@ -230,19 +221,37 @@ li {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 20px;
-  margin: 20px;
-  /* overflow: hidden; */
+  padding: 1.25rem;
+  margin: 1.25rem;
 }
-
 .competition-content {
   width: 30%;
   display: flex;
   flex-direction: column;
 }
-
 .competition-content h2 {
   margin: 0;
+}
+.competition-images {
+  position: relative;
+  width: 25rem;
+  height: 25rem;
+}
+.competition-images img:first-child {
+  position: absolute;
+  top: 1.25rem;
+  left: 1.25rem;
+  width: 25rem;
+  height: 25rem;
+}
+.competition-images::before {
+  content: "";
+  position: absolute;
+  top: 0.9375rem;
+  left: 0.9375rem;
+  width: 100%;
+  height: 100%;
+  border: 0.3125rem solid #5BACC3;
 }
 
 .competition-icons-layout {
@@ -257,49 +266,14 @@ li {
   width: 10%;
 }
 
-.competition-images {
-  position: relative;
-  width: 400px;
-  height: 400px;
-}
-
-.competition-images img:first-child {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 400px;
-  height: 400px;
-}
-
-/* 
-.competition-second-image {
-    position: absolute;
-    top: 130px;
-    left: 130px;
-    top:18%;
-    left:30%;
-    width: 180px;
-    height: 280px;
-} */
 .competition-second-image {
   position: absolute;
-  /* top: 130px;
-  left: 130px; */
+  left: 8.125rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 180px;
-  height: 280px;
-}
-
-.competition-images::before {
-  content: "";
-  position: absolute;
-  top: 15px;
-  left: 15px;
-  width: 100%;
-  height: 100%;
-  border: 5px solid #5BACC3;
+  width: 11.25rem;
+  height: 17.5rem;
 }
 
 .competition-images:hover .competition-second-image {
@@ -318,19 +292,21 @@ li {
 .discounts {
   text-align: center;
 }
-
 .discounts-text {
   display: inline-block;
   background-color: #393939;
   color: #ffffff;
-  padding: 2.5rem;
-  font-size: 1.125rem;
+  padding: 40px;
+  font-size: 18px;
   text-align: center;
-  border: 4rem solid white;
-  margin: 1.25rem auto;
-  font-size: 2.8125rem;
+  border: 64px solid white;
+  margin: 20px auto;
+  font-size: 45px;
   font-weight: 400;
   animation: flash-bg 2.5s infinite;
+}
+.discounts .discounts span {
+  font-weight: 700;
 }
 
 @keyframes flash-bg {
@@ -341,10 +317,6 @@ li {
     background-color: #5BACC3;
   }
 }
-.discounts span {
-  font-weight: 700;
-}
-
 .footer {
   background-color: #FFF0ED;
   position: relative;
@@ -355,30 +327,29 @@ li {
 
 .footer-design-left, .footer-design-right {
   position: absolute;
-  width: 50px;
+  width: 3.125rem;
   height: 100%;
 }
 
 .footer-design-left {
   position: absolute;
   top: 0;
-  left: -75px;
-  width: 120px;
-  height: 120px;
+  left: -4.6875rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .footer-design-right {
   position: absolute;
   top: 0;
-  right: -75px;
-  width: 120px;
-  height: 120px;
+  right: -4.6875rem;
+  width: 7.5rem;
+  height: 7.5rem;
 }
 
 .footer-design-left img, .footer-design-right img {
   width: 100%;
   height: 100%;
-  /* object-fit: contain; */
   opacity: 0.25;
 }
 
@@ -386,7 +357,6 @@ li {
   width: 100%;
   display: flex;
   justify-content: center;
-  /* text-align: left; */
   padding: 0;
   margin: 0;
 }
@@ -394,12 +364,11 @@ li {
 .footer-companyinfocard div {
   width: 30%;
   margin-right: 0;
-  /* min-width: 12.5rem;  */
 }
 
 .facebook, .yelp, .instagram {
-  width: 30px;
-  height: 30px;
+  width: 1.875rem;
+  height: 1.875rem;
 }
 
 .footer-companyinfocard span {

@@ -1,0 +1,29 @@
+@use 'variables' as *;
+
+@mixin flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin flex-between {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+ 
+@mixin button-base {
+    position: relative;
+    cursor: pointer;
+    border: none;
+    @include flex-center;
+}
+
+@mixin background-cover {
+    background-size: cover;
+}
+
+@mixin menu-section {
+    background-color: $color-lightaccent;
+    overflow: hidden;
+}
